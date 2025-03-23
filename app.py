@@ -28,9 +28,14 @@ training_columns = [
     "Fireplaces", "BsmtExposure", "Electrical", "RoofStyle", "ScreenPorch"
 ]
 
+
+
+# TODO
+# make frontend for to see graphs in real time
 @app.route("/")
 def home():
     return jsonify({"message": "House Price Prediction API Running..."})
+
 
 @app.route("/predict", methods=["POST"])
 def predict():
